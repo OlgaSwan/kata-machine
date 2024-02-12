@@ -1,11 +1,11 @@
 type QNode<T> = {
-    value: T,
+    value: T
     next?: QNode<T>
 }
 export default class Queue<T> {
-    public length: number;
-    head?: QNode<T>
-    tail?: QNode<T>
+    public length: number
+    private head?: QNode<T>
+    private tail?: QNode<T>
 
     constructor() {
         this.head = this.tail = undefined
