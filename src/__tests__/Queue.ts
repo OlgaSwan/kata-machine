@@ -10,7 +10,7 @@ test("queue", function () {
     expect(list.deque()).toEqual(5);
     expect(list.length).toEqual(2);
 
-    // this must be wrong..?
+    // this must be wrong...?
     debugger;
 
     // i hate using debuggers
@@ -22,6 +22,8 @@ test("queue", function () {
     expect(list.deque()).toEqual(11);
     expect(list.deque()).toEqual(undefined);
     expect(list.length).toEqual(0);
+    expect(list.tail).toEqual(undefined);
+    expect(list.head).toEqual(undefined);
 
     // just wanted to make sure that I could not blow up myself when i remove
     // everything
