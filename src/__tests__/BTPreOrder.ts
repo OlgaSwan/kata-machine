@@ -1,4 +1,4 @@
-import bt_pre_order from "@code/BTPreOrder";
+import bt_pre_order from "../day1/BTPreOrder";
 import { tree } from "./tree";
 
 test("Pre order", function () {
